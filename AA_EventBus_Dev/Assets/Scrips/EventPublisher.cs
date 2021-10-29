@@ -13,5 +13,19 @@ public class EventPublisher : MonoBehaviour
         {
             EventBus.TriggerEvent("Launch");
         }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            EventBus.TriggerEvent("Talk");
+        }
+
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            EventBus.TriggerEvent("Hide");
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            EventBus.TriggerEvent("Best");
+        }
     }
 }
